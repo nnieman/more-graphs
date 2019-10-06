@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C8EFB65-CE2A-4997-B553-4F08A226A94B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoreGraphs</RootNamespace>
+    <AssemblyName>MoreGraphs</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HistoryAutoRecorderWorker_MoreGraphs_ItemCountCategoryBase.cs" />
+    <Compile Include="Manufactured\HistoryAutoRecorderWorker_MoreGraphs_Manufactured_Drugs.cs" />
+    <Compile Include="Manufactured\HistoryAutoRecorderWorker_MoreGraphs_Manufactured_Medicine.cs" />
+    <Compile Include="Manufactured\HistoryAutoRecorderWorker_MoreGraphs_Manufactured_AdvancedComponents.cs" />
+    <Compile Include="Manufactured\HistoryAutoRecorderWorker_MoreGraphs_Manufactured_Components.cs" />
+    <Compile Include="Materials\HistoryAutoRecorderWorker_MoreGraphs_Materials_Plasteel.cs" />
+    <Compile Include="Materials\HistoryAutoRecorderWorker_MoreGraphs_Materials_Uranium.cs" />
+    <Compile Include="Materials\HistoryAutoRecorderWorker_MoreGraphs_Materials_Steel.cs" />
+    <Compile Include="Materials\HistoryAutoRecorderWorker_MoreGraphs_Materials_Wood.cs" />
+    <Compile Include="Nutrition\HistoryAutoRecorderWorker_MoreGraphs_NutritionAnimalProd.cs" />
+    <Compile Include="Nutrition\HistoryAutoRecorderWorker_MoreGraphs_NutritionTotal.cs" />
+    <Compile Include="Nutrition\HistoryAutoRecorderWorker_MoreGraphs_NutritionMeals.cs" />
+    <Compile Include="Nutrition\HistoryAutoRecorderWorker_MoreGraphs_NutritionMeat.cs" />
+    <Compile Include="Nutrition\HistoryAutoRecorderWorker_MoreGraphs_NutritionVeg.cs" />
+    <Compile Include="HistoryAutoRecorderWorker_MoreGraphs_NutritionCountBase.cs" />
+    <Compile Include="HistoryAutoRecorderWorker_MoreGraphs_ItemCountBase.cs" />
+    <Compile Include="SmallMaterials\HistoryAutoRecorderWorker_MoreGraphs_SmallMaterials_Silver.cs" />
+    <Compile Include="SmallMaterials\HistoryAutoRecorderWorker_MoreGraphs_SmallMaterials_Jade.cs" />
+    <Compile Include="SmallMaterials\HistoryAutoRecorderWorker_MoreGraphs_SmallMaterials_Gold.cs" />
+    <Compile Include="Wealth\HistoryAutoRecorderWorker_MoreGraphsWealthManufactured.cs" />
+    <Compile Include="Wealth\HistoryAutoRecorderWorker_MoreGraphsWealthWeapons.cs" />
+    <Compile Include="Wealth\HistoryAutoRecorderWorker_MoreGraphsWealthMaterials.cs" />
+    <Compile Include="Wealth\HistoryAutoRecorderWorker_MoreGraphsWealthMedicalDrugs.cs" />
+    <Compile Include="Wealth\HistoryAutoRecorderWorker_MoreGraphsWealthClothingArmor.cs" />
+    <Compile Include="Wealth\HistoryAutoRecorderWorker_MoreGraphsWealthFood.cs" />
+    <Compile Include="Power\HistoryAutoRecorderWorker_MoreGraphs_StoredEnergy.cs" />
+    <Compile Include="Power\HistoryAutoRecorderWorker_MoreGraphs_EnergyGainRate.cs" />
+    <Compile Include="HistoryAutoRecorderWorker_MoreGraphsWealthCategoryBase.cs" />
+    <Compile Include="MoreGraphsGameComponent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ItemWealthTrackerMapComponent.cs" />
+    <Compile Include="WealthCategory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Notes.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
