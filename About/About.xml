@@ -2,7 +2,11 @@
 <ModMetaData>
 	<name>More Graphs</name>
 	<author>natbob1</author>
-	<supportedVersions><li>1.0</li></supportedVersions>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>natbob1.moregraphs</packageId>
 	<description>Adds more graphs to the History tab including an item wealth breakdown, food breakdown, power usage, and item counts.
 
 &lt;size=24&gt;Graphs&lt;/size&gt;

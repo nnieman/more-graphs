@@ -328,3 +328,7 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+
+# Ignore all output assemblies other than MoreGraphs
+1.1/Assemblies/[!M][!o]*.dll
